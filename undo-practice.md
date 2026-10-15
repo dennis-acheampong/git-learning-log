@@ -12,5 +12,9 @@ This file documents the Git undo and recovery tools I've learned.
 ## Revert
 - git revert Head: create a new commit that undoes the last commit 
 - git revert is safe for shared/pused branches because it doesnt rewrite history 
-- The original commit stays in the lpg, plus a new "undo" commit is added
+- The original commit stays in the log, plus a new "undo" commit is added
 
+## Reflog
+- git reflog : shows everywhere HEAD has pointed (commits, resets, checkouts)
+- Reflog entries last about 90 days before being garbage collected
+- To recover: find the SHA in reflog, then git branch <name> <SHA> 
