@@ -13,7 +13,6 @@ This file documents the Git undo and recovery tools I've learned.
 - git revert Head: create a new commit that undoes the last commit 
 - git revert is safe for shared/pused branches because it doesnt rewrite history 
 - The original commit stays in the log, plus a new "undo" commit is added
-- WRONG: always rebase shared branches to keep histroy clean 
 
 ## Reflog
 - git reflog : shows everywhere HEAD has pointed (commits, resets, checkouts)
